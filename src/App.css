@@ -1,0 +1,14 @@
+/* Other rules */
+.burger {
+  display: none;
+}
+
+@media (max-width: 910px) {
+  .burger {
+    display: block;
+    position: absolute !important;
+    z-index: 3;
+    top: 15px;
+    left: 15px;
+  }
+}

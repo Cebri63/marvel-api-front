@@ -1,0 +1,50 @@
+tr {
+  outline: 1px solid var(--red);
+}
+
+td {
+  text-align: center;
+  padding: 5px;
+}
+
+th {
+  font-size: 18px;
+  padding: 5px;
+}
+
+th:not(:first-child),
+td:not(:first-child) {
+  border-left: 1px solid var(--red);
+}
+
+.documentation-container {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.documentation-container div {
+  padding: 20px;
+}
+
+.documentation-container img {
+  width: calc(100vw - 66%);
+  object-fit: cover;
+}
+
+.documentation-container h2 {
+  text-decoration: underline;
+}
+
+.documentation-container a {
+  text-decoration: none;
+  color: white;
+  pointer-events: none;
+  font-weight: 400;
+}
+
+@media (max-width: 910px) {
+  .documentation-container div {
+    padding: 60px 10px 10px 20px;
+  }
+}

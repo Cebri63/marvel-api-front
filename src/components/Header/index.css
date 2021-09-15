@@ -1,0 +1,65 @@
+/* HEADER ******************** */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--black-header);
+  height: var(--header-height);
+  padding: 0 20px;
+  user-select: none;
+}
+
+.header-container .logo {
+  height: 45px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-container > span {
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+}
+
+.header-container button {
+  width: 100px;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.button-login {
+  color: white;
+  background-color: var(--black-header);
+  margin-right: 20px;
+}
+
+.button-signup {
+  height: 30px;
+  background-color: white;
+  color: var(--black);
+  border-radius: 5px;
+}
+
+.button-logout {
+  height: 30px;
+  width: 200px !important;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  background-color: var(--red);
+  color: white;
+}
+
+.button-documentation {
+  color: white;
+  background-color: var(--black-header);
+  margin-right: 80px;
+}
+
+@media (max-width: 910px) {
+  .header-container {
+    display: none;
+  }
+}
